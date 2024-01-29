@@ -6,8 +6,6 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// const sourceFileName = "wrongFilename.txt";
-// const destinationFileName = "properFilename.md";
 const sourceFileName = "properFilename.md";
 const destinationFileName = "wrongFilename.txt";
 const sourceFilePath = path.join(__dirname, "files", sourceFileName);
