@@ -4,8 +4,7 @@ const nthFibonacci = (n) =>
   n < 2 ? n : nthFibonacci(n - 1) + nthFibonacci(n - 2);
 
 const sendResult = () => {
-  const n = workerData;
-  const result = nthFibonacci(n);
+  const result = nthFibonacci(workerData);
   parentPort.postMessage(result);
 };
 
